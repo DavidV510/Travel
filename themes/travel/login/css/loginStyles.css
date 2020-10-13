@@ -1,0 +1,81 @@
+:root{
+    --backColor:rgb(146, 18, 18);
+    --yellow: rgb(255, 208, 52);
+    --white:white;
+
+    --mainFont:'Raleway', sans-serif;
+    --semiFont:'Roboto', sans-serif;
+}
+body .login{
+    background: transparent;
+}
+body .login div#login{
+   
+}
+body.login {}
+body.login div#login {
+    width: 25%;
+    margin: 0 auto;
+}
+body.login div#login h1 {}
+body.login div#login h1 a {
+    background-image: url(../../img/logo.svg);
+    background-size: 60%;
+    height: 10rem;
+    width: 10rem;}
+body.login div#login form#loginform {
+    background-color: rgba(209, 39, 39, 0.74);
+    margin-top: -4rem;
+    width: 21rem;
+    border: none;
+    color: white;
+    font-size: 1rem;
+}
+body.login div#login form#loginform p {}
+body.login div#login form#loginform p label {}
+body.login div#login form#loginform input {}
+body.login div#login form#loginform input#user_login {}
+body.login div#login form#loginform input#user_pass {}
+body.login div#login form#loginform p.forgetmenot {}
+body.login div#login form#loginform p.forgetmenot input#rememberme {}
+body.login div#login form#loginform p.submit {}
+body.login div#login form#loginform p.submit input#wp-submit {}
+body.login div#login p#nav {}
+body.login div#login p#nav a {
+    color: white;
+    font-family: var(--mainFont);
+    font-size: 1.2rem;
+}
+body.login div#login p#backtoblog {}
+body.login div#login p#backtoblog a {
+    color: white;
+    font-family: var(--mainFont);
+    font-size: 1.2rem;
+}
+
+@media(max-width:768px){
+    body.login div#login {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+    body.login div#login form#loginform {
+        width:87%;
+        font-size: 1.5rem;
+    }
+    body.login div#login form#loginform p label {
+        font-size: 1.5rem;
+    }
+
+    body.login div#login p#nav a {
+        color: white;
+        font-family: var(--mainFont);
+        font-size: 1.2rem;
+    }
+    body.login div#login p#backtoblog {}
+    body.login div#login p#backtoblog a {
+        color: white;
+        font-family: var(--mainFont);
+        font-size: 1.2rem;
+    }
+}

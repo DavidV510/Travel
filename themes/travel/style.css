@@ -1,0 +1,155 @@
+/* 
+    Theme Name: Travel
+    Theme URI:
+    Author:David Vinter
+    Author URI:
+    Description: My Theme for Travel Agency
+    Version:1.0
+    License:GNU General Public License v2 or later
+    License URI: http://wwww.gnu.org/licenses/gpl-2.0.html
+    Tags:Css Grid, Flexbox, Responsive, Bootstrap, Javascript
+
+*/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    margin-top: 0px !important;
+}
+body{
+   position: relative;
+}
+
+:root{
+    --backColor:rgb(146, 18, 18);
+    --yellow: rgb(255, 208, 52);
+    --white:white;
+
+    --mainFont:'Raleway', sans-serif;
+    --semiFont:'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+h2{
+    font-family: var(--mainFont);
+}
+
+h3{
+    font-family: var(--mainFont);
+}
+p{
+    font-family: var(--semiFont);
+}
+
+
+ul{
+    list-style: none;
+    margin: 0; padding: 0;
+}
+
+li{
+    font-family: var(--mainFont);
+}
+
+
+.more{
+    background: orange;
+    width: 35%;
+    text-align: center;
+    padding: 1rem 2rem;
+    border-radius: 14px;
+    font-size: 2rem;
+    color: white;
+    font-family: var(--mainFont);
+}
+
+
+.container{
+    max-width: 150rem;
+    margin: 0 auto;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sliderbig .bx-wrapper{
+    -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+.sliderbig .bx-wrapper .bx-viewport{
+    height: 50rem !important;
+    
+}
+
+.sliderbig .bx-wrapper .bx-pager {
+    display: none;
+}
+
+
+.search{
+    width: 68%;
+    margin: 0 auto;
+    font-family: var(--mainFont);
+    font-size: 2rem;
+    display: flex;
+}
+.search input{
+    width: 85%;
+    border: 2px solid var(--yellow);
+    height: 4rem;
+    border-radius: 5px;
+}
+
+.search button{
+    padding: 1rem;
+    margin-left: 2rem;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background: var(--yellow);
+    transition: 0.3s ease all;
+}
+.search button:hover{
+    color: black;
+}
+
+@media(max-width:768px){
+    .container {
+        height: 100%;
+        position: relative;
+        display: block;
+    }
+    .more{
+        width: 55%;
+    }
+
+    .sliderbig .bx-wrapper .bx-viewport{
+        height: 25rem !important;
+        
+    }
+    
+    .sliderbig .bx-wrapper img{
+        height: 50rem;
+    }
+
+    .search{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .search input{
+        width: 100%;
+    }
+
+    .search button{
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,42 @@
+/* 
+    Theme Name: Travel
+    Theme URI:
+    Author:David Vinter
+    Author URI:
+    Description: My Theme for Travel Agency
+    Version:1.0
+    License:GNU General Public License v2 or later
+    License URI: http://wwww.gnu.org/licenses/gpl-2.0.html
+    Tags:Css Grid, Flexbox, Responsive, Bootstrap, Javascript
+
+*/
+
+/* Tours */
+.container .toursGrid{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-gap:15px;
+}
+
+.container .toursGrid .tour{
+    display: block;
+}
+
+.container .toursGrid .tour .tour-img{
+    width: 100%;
+    height: 35rem;
+}
+
+.container .toursGrid .tour .tour-content{
+    text-align: left;
+}
+.container .toursGrid .tour .tour-content h3{
+    font-family: var(--mainFont);
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
+}
+
+
+@media(max-width:768px){
+    
+}

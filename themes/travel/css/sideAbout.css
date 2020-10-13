@@ -1,0 +1,229 @@
+/* 
+    Theme Name: Travel
+    Theme URI:
+    Author:David Vinter
+    Author URI:
+    Description: My Theme for Travel Agency
+    Version:1.0
+    License:GNU General Public License v2 or later
+    License URI: http://wwww.gnu.org/licenses/gpl-2.0.html
+    Tags:Css Grid, Flexbox, Responsive, Bootstrap, Javascript
+
+*/
+
+.inner{
+    position: relative;
+    top: 5rem;
+}
+.inner h2 {
+    width: 100%; 
+    font-size: 6rem;
+    text-align: center;
+    border-bottom: 1px solid rgb(231, 149, 26);
+    line-height: 0.1em;
+    margin: 1rem 0 5rem;
+    color: rgb(231, 149, 26);
+ } 
+ 
+ .inner  h2 span { 
+     background:#fff; 
+     padding:0 10px; 
+ }
+
+ .inner .inner-cont{
+    display: flex;
+ }
+ 
+ .inner .inner-cont .par{
+    width: 50%;
+    font-size: 2rem;
+    line-height: 4rem;
+    font-weight: 300;
+ }
+
+ .inner .inner-cont .images{
+     width: 50%;
+     position: relative;
+ }
+
+ .inner .inner-cont .images .img1 {
+    position: absolute;
+    z-index: 1;
+    left: 10rem;
+    top: 5rem;
+    transform: rotateZ(-17deg);
+    width: 40rem;
+    height: 27rem;
+ }
+ .inner .inner-cont .images .img2 {
+    position: absolute;
+    z-index: 2;
+    top: 35rem;
+    transform: rotate(6deg);
+    left: 12rem;
+    width: 40rem;
+    height: 27rem;
+ }
+ .inner .inner-cont .images .img1 .boxImg{
+    box-shadow: inset 0 0 0 0.8vw #9ad18b;
+    position: absolute;
+    width: 100%;
+    display: block;
+    top: 0;
+    height: 100%;
+ }
+
+ .inner .inner-cont .images .img2 .boxImg{
+    box-shadow: inset 0 0 0 0.8vw #9ad18b;
+    position: absolute;
+    width: 100%;
+    display: block;
+    top: 0;
+    height: 100%;
+ }
+
+/* Tours */
+.container .toursGrid{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-gap:15px;
+}
+
+.container .toursGrid .tour{
+    display: block;
+}
+
+.container .toursGrid .tour .tour-img{
+    width: 100%;
+    height: 35rem;
+}
+
+.container .toursGrid .tour .tour-content{
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: var(--semiFont);
+}
+.container .toursGrid .tour .tour-content .tour-inner h3{
+    font-family: var(--mainFont);
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
+    color: var(--yellow);
+}
+
+.container .toursGrid .tour .tour-content {
+    font-family: var(--mainFont);
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+
+.container .toursGrid .tour .tour-content .tour-inner .tourDate .tour-price{
+    float: right;
+    position: relative;
+    right: 1rem;
+    color: var(--yellow);
+    font-size: 2rem;
+}
+
+
+
+/* Contact Us */
+
+.wpcf7-form{
+    text-align: center;
+    font-size: 3rem;
+    top: 3rem;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.wpcf7 input{
+    margin-top: 2rem;
+    border: 1px solid var(--yellow);
+}
+.wpcf7 textarea{
+    margin-top: 2rem;
+    border: 1px solid var(--yellow);
+}
+
+.wpcf7 input[type="submit"]{
+    background-color: var(--yellow);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 4rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.wpcf7 input[type="submit"]:hover{
+    color: black;
+}
+
+
+
+ @media(max-width:768px){
+    .inner h2 {
+        font-size: 2rem;
+    }
+    .inner .inner-cont{
+        display: block;
+     }
+     
+     .inner .inner-cont .par{
+        width: 100%;
+        
+     }
+     
+    
+     .inner .inner-cont .images{
+         width: 100%;
+         position: relative;
+     }
+    .inner .inner-cont .par {
+        width: 100%;
+        font-size: 1.7rem;
+        line-height: 3rem;
+        padding: 0.7rem;
+        font-weight: 300;
+    }
+
+    .inner .inner-cont .images {
+        width: 100%;
+        position: relative;
+        display: block;
+        height: 52rem;
+    }
+
+    .inner .inner-cont .images .img1 {
+        position: absolute;
+        z-index: 1;
+        left: 4rem;
+        top: 5rem;
+        transform: rotateZ(-17deg);
+        width: 28rem;
+        height: 18rem;
+    }
+
+    .inner .inner-cont .images .img2 {
+        position: absolute;
+        z-index: 2;
+        top: 26rem;
+        transform: rotate(6deg);
+        left: 5rem;
+        width: 27rem;
+        height: 18rem;
+    }
+
+
+    .container .inner .toursGrid {
+        display: block;
+        padding: 1rem;
+    }
+
+    .wpcf7 .wpcf7-form {
+        text-align: center;
+        font-size: 2rem;
+    }
+ }

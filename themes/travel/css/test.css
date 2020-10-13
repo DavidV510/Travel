@@ -1,0 +1,230 @@
+/* 
+    Theme Name: Travel
+    Theme URI:
+    Author:David Vinter
+    Author URI:
+    Description: My Theme for Travel Agency
+    Version:1.0
+    License:GNU General Public License v2 or later
+    License URI: http://wwww.gnu.org/licenses/gpl-2.0.html
+    Tags:Css Grid, Flexbox, Responsive, Bootstrap, Javascript
+
+*/
+
+/*Test */
+
+.happy{
+    font-size: 3rem;
+    width: 70%;
+    margin: 9rem auto;
+}
+
+.inner-test{
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.inner-test .test{
+    border: 1px solid gray;
+    margin: 1rem;
+    margin-bottom: 4rem;
+}
+
+.inner-test .test .test-title {
+    background: orange;
+    font-size: 2.5rem;
+    font-family: var(--mainFont);
+    padding: 1rem;
+    color: white;
+}
+
+.inner-test .test .test-content {
+    background: #ffc0cb7a;
+    padding: 3rem;
+    font-family: var(--mainFont);
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 4rem;
+    padding-bottom: 5rem;
+}
+
+.inner-test .test .test-content p{
+    margin-top: 0;
+}
+
+.inner-test .test .test-content .test-author{
+    float: right;
+    font-weight: 700;
+}
+
+
+/* Blog */
+
+.blog-container{
+    width: 100%;
+    position: relative;
+    top: 5rem;
+}
+
+
+.blog{
+    margin-top: 5rem;
+    display: flex;
+    height: 35rem;
+    position: relative;
+}
+
+.blog .blog-image{
+    width: 35%;
+    position: relative;
+}
+
+.blog .blog-image .boxImg{
+    box-shadow: inset 0 0 0 0.8vw #9ad18b;
+    position: absolute;
+    width: 100%;
+    display: block;
+    top: 0;
+    height: 100%;
+ }
+ .blog .blog-content a{
+     color: var(--yellow);
+ }
+.blog .blog-content{
+    width: 65%;
+    display: block;
+    text-align: left;
+    margin-left: 2rem;
+}
+
+.blog .blog-content .blog-title{
+    font-size: 4.5rem;
+    margin-top: 2rem;
+    font-family: var(--mainFont);
+    color: var(--yellow);
+}
+
+.blog .blog-content p{
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+/* First Blog */
+
+.blog:nth-child(1){
+    display: block;
+    position: relative;
+    margin-bottom: 5rem;
+    height: 100%;
+}
+
+.blog:nth-child(1) .blog-image{
+    width: 100%;
+    height: 60rem;
+    position: relative;
+}
+
+.blog:nth-child(1) .blog-content{
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    margin-left: 0rem;
+}
+
+
+.blog:nth-child(1) .blog-content .blog-semi-cont{
+    width: 65%;
+    margin-left: 2rem;
+}
+
+.blog:nth-child(1) .blog-content .blog-date{
+    width: 35%; 
+}
+.blog:nth-child(1) .blog-content .blog-date p{
+    float: right;
+    margin-right: 2rem;
+}
+
+
+@media (max-width:768px){
+    /* Test */
+    .inner-test {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .inner-test .test .test-content {
+        background: #ffc0cb7a;
+        padding: 2rem;
+        font-family: var(--mainFont);
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 3rem;
+        padding-bottom: 5rem;
+    }
+    /* Blog */
+    .blog{
+        margin-top: 16rem;
+        display:block;
+        height: 34rem;
+    }
+    .blog .blog-image{
+        width: 100%;
+        position: relative;
+    }
+    .blog .blog-content{
+        width: 100%;
+    }
+
+    .blog .blog-content .blog-title {
+        font-size: 3.5rem;
+        margin-top: 2rem;
+        font-family: var(--mainFont);
+        color: var(--yellow);
+    }
+    .blog .blog-content {
+        width: 100%;
+        display: block;
+        text-align: left;
+        margin-left: 1rem;
+    }
+    .blog .blog-content p {
+        font-size: 1.5rem;
+        font-weight: 300;
+        width: 100%;
+        padding: 0rem;
+        margin: 0 auto;
+    }
+    .blog .blog-content .blog-date p {
+        float: right;
+        margin-top: 2rem;
+        
+    }
+    
+    .blog:nth-child(1) .blog-content{
+        display: block;
+        margin: 0 auto;
+        width: 94%;
+    }
+
+    .blog:nth-child(1) .blog-content .blog-semi-cont{
+        width: 100%;
+        margin-left: 0rem;
+    }
+    
+    .blog:nth-child(1) .blog-image {
+        width: 100%;
+        height: 24rem;
+        position: relative;
+    }
+
+    .blog:nth-child(1) .blog-content .blog-date{
+        width: 100%; 
+    }
+    .blog:nth-child(1) .blog-content .blog-date p {
+        float: right;
+        margin-top: 2rem;
+        margin-right: 0;
+    }
+}

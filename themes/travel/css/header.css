@@ -1,0 +1,263 @@
+/* 
+    Theme Name: Travel
+    Theme URI:
+    Author:David Vinter
+    Author URI:
+    Description: My Theme for Travel Agency
+    Version:1.0
+    License:GNU General Public License v2 or later
+    License URI: http://wwww.gnu.org/licenses/gpl-2.0.html
+    Tags:Css Grid, Flexbox, Responsive, Bootstrap, Javascript
+
+*/
+
+/* Head */
+
+.head{
+    position: relative;
+    height: 35rem;
+    z-index: 3;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head .head-cont{
+    position: relative;
+    background-color: rgb(2 2 46 / 69%);
+    margin: 0 auto;
+    height: 35%;
+    top: 2rem;
+}
+.head .head-cont .logo{
+    float: left;
+    margin: 1rem 10rem;
+    width: 8%;  
+}
+.head .head-cont .travel-menu{
+    float: right;
+    margin-right: 3rem;
+}
+.head .head-cont .travel-menu .menu{
+    display: flex;
+}
+
+
+
+.head .head-cont .travel-menu .menu li{
+    padding: 5rem 3rem;
+}
+
+
+.head .head-cont .travel-menu .menu .current-menu-item{
+    background-color: var(--yellow);
+}
+.head .head-cont .travel-menu .menu li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+}
+ .head-img{
+    position: absolute;
+    top: -3rem;
+    z-index: 1;
+    width: 100%;
+    height: 35rem;
+}
+
+
+/* Sub Head */
+.headSub{
+    position: absolute;
+    height: 35rem;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.headSub .head-cont{
+    position: relative;
+    background-color: rgb(2 2 46 / 69%);
+    margin: 0 auto;
+    height: 35%;
+    top: 2rem;
+}
+.headSub .head-cont .logo{
+    float: left;
+    margin: 1rem 10rem;
+    width: 8%;  
+}
+.headSub .head-cont .travel-menu{
+    float: right;
+    margin-right: 3rem;
+}
+.headSub .head-cont .travel-menu .menu{
+    display: flex;
+}
+
+
+
+.headSub .head-cont .travel-menu .menu li{
+    padding: 5rem 3rem;
+}
+
+
+.headSub .head-cont .travel-menu .menu .current-menu-item{
+    background-color: var(--yellow);
+}
+
+
+.headSub .head-cont .travel-menu .menu li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+}
+ .head-img{
+    position: absolute;
+    top: -3rem;
+    z-index: 1;
+    width: 100%;
+    height: 35rem;
+}
+
+.mobile-menu{
+    display: none;
+}
+#menu-head-menu-1{
+    display: none;
+}
+
+
+
+@media(max-width:768px){
+    .head{
+        margin-top: 0;
+        height: 50rem;
+    }
+    .head .head-cont{
+        display: block;
+        height: 6.9%;
+    }
+    .head .head-cont .logo {
+        float: left;
+        padding-top: 2rem;
+        margin: 0rem 9.5rem;
+        width: 48%;
+    }
+   
+    .head .head-cont .travel-menu .menu{
+        display: block;
+        text-align: center;
+    }
+    .head .head-cont .travel-menu {
+        float: none;
+        margin-right: 0;
+        display: none;
+    }
+    .head .head-cont .travel-menu .menu li{
+        padding: 1.2rem 3rem;
+        margin: 0;
+    }
+
+    .head-img {
+        position: absolute;
+        top: 50rem;
+        z-index: 1;
+        width: 100%;
+        height: 35rem;
+    }
+
+
+    /* Sub Head */
+
+    .headSub {
+        margin-top: 0;
+        height: 25rem;
+    }
+    .headSub .head-cont{
+        display: block;
+        height: 86%;
+    }
+    .headSub .head-cont .logo {
+        float: left;
+        padding-top: 2rem;
+        margin: 0rem 9.5rem;
+        width: 48%;
+    }
+   
+    .headSub .head-cont .travel-menu .menu{
+        display: block;
+        text-align: center;
+    }
+    .headSub .head-cont .travel-menu {
+        float: none;
+        margin-right: 0;
+    }
+    .headSub .head-cont .travel-menu .menu li{
+        padding: 1.2rem 3rem;
+        margin: 0;
+    }
+
+    .head-img {
+        position: absolute;
+        top: 50rem;
+        z-index: 1;
+        width: 100%;
+        height: 35rem;
+    }
+
+
+    /* Mobile Menu */
+       .mobile-menu{
+        display: block;
+        margin-top: 1.5rem;
+        text-align: center;
+        font-size: 2.5rem;
+        
+        padding: 1rem;
+        
+    }
+    .mobile-menu a{
+        color: var(--white);
+        text-transform: uppercase;
+    }
+
+    .mobile-menu .mobileText{
+        font-family: var(--mainFont);
+        font-weight: bold;
+    }
+
+    /* Menu Head */
+    #menu-head-menu {
+        display: none;
+        margin-top: 0rem;
+    }
+
+    #menu-head-menu-1{
+        margin-top: 0;
+        text-align: center;
+
+    }
+    #menu-head-menu-1 li{
+        margin-bottom: 3rem;
+    }
+    #menu-head-menu-1 a{
+        color: black;
+        
+        font-size: 2.5rem;
+        text-decoration: none;
+    }
+
+    #menu-head-menu-1 .current-menu-item{
+        background-color: var(--yellow);
+    }
+}
