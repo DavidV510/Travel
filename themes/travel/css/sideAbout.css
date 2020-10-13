@@ -41,10 +41,11 @@
     font-weight: 300;
  }
 
- .inner .inner-cont .images{
-     width: 50%;
-     position: relative;
- }
+ .inner .inner-cont .images {
+    width: 50%;
+    position: relative;
+    height: 60rem;
+}
 
  .inner .inner-cont .images .img1 {
     position: absolute;
@@ -81,6 +82,10 @@
     top: 0;
     height: 100%;
  }
+
+
+
+
 
 /* Tours */
 .container .toursGrid{
@@ -220,6 +225,8 @@
     .container .inner .toursGrid {
         display: block;
         padding: 1rem;
+        margin-bottom: 10rem;
+        height: 100%;
     }
 
     .wpcf7 .wpcf7-form {

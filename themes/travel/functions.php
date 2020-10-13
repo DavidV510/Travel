@@ -12,14 +12,14 @@ function travel_menu(){
 
 function travel_scripts(){
     wp_enqueue_style('normalize',get_template_directory_uri().'/css/normalize.css',array(),'8.0.1');
-    wp_enqueue_style('head',get_template_directory_uri().'/css/header.css',NULL, '1.0.3.9');
-    wp_enqueue_style('foot',get_template_directory_uri().'/css/footer.css',NULL, '1.0.3.9');
-    wp_enqueue_style('about',get_template_directory_uri().'/css/about.css',NULL, '1.0.3.9');
-    wp_enqueue_style('sideAbout',get_template_directory_uri().'/css/sideAbout.css',NULL, '1.0.3.9');
-    wp_enqueue_style('home',get_template_directory_uri().'/css/home.css',NULL, '1.0.3.9');
-    wp_enqueue_style('test',get_template_directory_uri().'/css/test.css',NULL, '1.0.3.9');
+    wp_enqueue_style('head',get_template_directory_uri().'/css/header.css',NULL, '1.0.4.4');
+    wp_enqueue_style('foot',get_template_directory_uri().'/css/footer.css',NULL, '1.0.4.4');
+    wp_enqueue_style('about',get_template_directory_uri().'/css/about.css',NULL, '1.0.4.4');
+    wp_enqueue_style('sideAbout',get_template_directory_uri().'/css/sideAbout.css',NULL, '1.0.4.4');
+    wp_enqueue_style('home',get_template_directory_uri().'/css/home.css',NULL, '1.0.4.4');
+    wp_enqueue_style('test',get_template_directory_uri().'/css/test.css',NULL, '1.0.4.4');
     
-    wp_enqueue_style('style', get_stylesheet_uri(), array('normalize','head','foot','about','sideAbout','test','home'), '1.0.3.9');
+    wp_enqueue_style('style', get_stylesheet_uri(), array('normalize','head','foot','about','sideAbout','test','home'), '1.0.4.4');
 
     
     wp_enqueue_script('jquery');
@@ -65,7 +65,9 @@ function responsive_img($post_id){
 
 
 function wpdocs_excerpt_more( $more ) {
-    return '<br> <div class="more"> Continue Reading</div>';
+    global $post;
+    get_permalink($post->ID);
+    return '<br> <a href="'. get_permalink($post->ID) .'"> <div class="more"> Continue Reading</div> </a>';
 }
 
 
@@ -142,8 +144,8 @@ add_action('wp_enqueue_scripts', 'travel_scripts');
 add_action('after_setup_theme','travel_thumbnails');
 add_action('slider_index','slider');
 add_action('widgets_init','travel_widgets');
-add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
-add_action( 'widgets_init', 'register_upcoming_tours' );
+add_filter('excerpt_more', 'wpdocs_excerpt_more' );
+add_action('widgets_init', 'register_upcoming_tours' );
 add_action('widgets_init','register_blog');
 add_filter('pre_get_posts','searchfilter');
 ?>

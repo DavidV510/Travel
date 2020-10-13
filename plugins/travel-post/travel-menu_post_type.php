@@ -39,7 +39,7 @@ function travelAgency_menu() {
 		'show_ui'            => true,
 		'show_in_menu'       => true,
 		'query_var'          => true,
-		'rewrite'            => array( 'slug' => 'travel' ),
+		// 'rewrite'            => array( 'slug' => 'travel' ),
 		'capability_type'    => 'post',
 		'has_archive'        => true,
 		'hierarchical'       => false,
@@ -48,7 +48,7 @@ function travelAgency_menu() {
     'taxonomies'          => array( 'category' ),
 	);
 
-	register_post_type( 'travel-menu', $args );
+	register_post_type( 'Travel-menu', $args );
 }
 
 add_action( 'init', 'travelAgency_menu' );

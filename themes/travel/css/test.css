@@ -153,6 +153,7 @@
         display: block;
         width: 100%;
         margin: 0 auto;
+        margin-bottom: 10rem;
     }
     .inner-test .test .test-content {
         background: #ffc0cb7a;
@@ -167,14 +168,18 @@
     .blog{
         margin-top: 16rem;
         display:block;
-        height: 34rem;
+        height: 75rem;
     }
     .blog .blog-image{
         width: 100%;
         position: relative;
     }
     .blog .blog-content{
-        width: 100%;
+        width: 90%;
+        display: block;
+        text-align: left;
+        margin-left: 0;
+        margin: 0 auto;
     }
 
     .blog .blog-content .blog-title {
@@ -183,12 +188,7 @@
         font-family: var(--mainFont);
         color: var(--yellow);
     }
-    .blog .blog-content {
-        width: 100%;
-        display: block;
-        text-align: left;
-        margin-left: 1rem;
-    }
+   
     .blog .blog-content p {
         font-size: 1.5rem;
         font-weight: 300;
@@ -203,9 +203,11 @@
     }
     
     .blog:nth-child(1) .blog-content{
+        width: 90%;
         display: block;
+        text-align: left;
+        margin-left: 0;
         margin: 0 auto;
-        width: 94%;
     }
 
     .blog:nth-child(1) .blog-content .blog-semi-cont{
